@@ -1,8 +1,6 @@
-require File.expand_path("../lib/net/ssh/shell/version", __FILE__)
-
 Gem::Specification.new do |s|
   s.name          = "net-ssh-shell"
-  s.version       = Net::SSH::Shell::VERSION
+  s.version       = File.read(File.join(__dir__, 'VERSION'))
   s.authors       = ["Jamis Buck"]
   s.email         = ["jamis@jamisbuck.org"]
   s.homepage      = "http://github.com/net-ssh/net-ssh-shell"
@@ -11,11 +9,12 @@ Gem::Specification.new do |s|
   s.files         = %w[lib/net/ssh/shell.rb
                        lib/net/ssh/shell/process.rb
                        lib/net/ssh/shell/subshell.rb
-                       lib/net/ssh/shell/version.rb
                        README.rdoc
                        Rakefile
                       ]
 
+  s.required_ruby_version = "~> 2.0"
   s.add_dependency "net-ssh", "~> 2.0"
   s.add_development_dependency "rake"
+  s.add_development_dependency "buildar", "~> 2.0"
 end

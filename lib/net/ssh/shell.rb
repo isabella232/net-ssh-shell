@@ -6,6 +6,10 @@ require 'net/ssh/shell/subshell'
 module Net
   module SSH
     class Shell
+      def self.version
+        File.read(File.join(__dir__, '..', '..', 'VERSION'))
+      end
+
       attr_reader :session
       attr_reader :channel
       attr_reader :state
