@@ -1,11 +1,12 @@
 Gem::Specification.new do |s|
   s.name          = "net-ssh-shell"
   s.version       = File.read(File.join(__dir__, 'VERSION'))
-  s.authors       = ["Jamis Buck"]
-  s.email         = ["jamis@jamisbuck.org"]
   s.homepage      = "http://github.com/net-ssh/net-ssh-shell"
   s.summary       = "A simple library to aid with stateful shell interactions"
   s.description   = "A simple library to aid with stateful shell interactions"
+  s.authors       = ["Jamis Buck"]
+  s.email         = ["jamis@jamisbuck.org"]
+  s.license       = 'MIT'
   s.files         = %w[lib/net/ssh/shell.rb
                        lib/net/ssh/shell/process.rb
                        lib/net/ssh/shell/subshell.rb
