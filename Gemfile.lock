@@ -1,0 +1,18 @@
+PATH
+  remote: .
+  specs:
+    net-ssh-shell (0.3.0.dev)
+      net-ssh (~> 2.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    net-ssh (2.9.2)
+    rake (10.4.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  net-ssh-shell!
+  rake
